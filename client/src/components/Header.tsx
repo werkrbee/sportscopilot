@@ -34,7 +34,7 @@ export default function Header() {
             className={`text-foreground hover:text-primary cursor-pointer ${location === '/signin' ? 'text-primary font-medium' : ''}`}
             data-testid="link-signin"
           >
-            Sign In (Private Preview)
+            Login
           </span>
         </Link>
       </nav>
