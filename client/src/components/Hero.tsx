@@ -14,11 +14,11 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             size="lg"
-            data-testid="button-build-actionplan-hero"
+            data-testid="button-explore-agents-hero"
             className="text-lg px-8 py-4 hover-elevate active-elevate-2"
             onClick={() => window.location.href = '/signup'}
           >
-            Build My ActionPlan
+            Explore Agents to Create a Personalized ActionPlan
           </Button>
           <Button 
             variant="outline"
@@ -27,7 +27,7 @@ export default function Hero() {
             className="text-lg px-8 py-4 hover-elevate active-elevate-2"
             onClick={() => window.location.href = '/about'}
           >
-            Watch Allison's Story
+            Watch Allie's Story
           </Button>
         </div>
       </div>

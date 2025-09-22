@@ -85,10 +85,10 @@ export default function SignInPage() {
 
             <div className="mt-8 text-center">
               <p className="text-muted-foreground">
-                Don't have an account?{" "}
+                Need private preview access?{" "}
                 <Link href="/signup">
                   <span className="text-primary hover:underline cursor-pointer font-medium">
-                    Sign up for free
+                    Join waitlist
                   </span>
                 </Link>
               </p>

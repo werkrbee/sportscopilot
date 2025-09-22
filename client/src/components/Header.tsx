@@ -18,7 +18,7 @@ export default function Header() {
             className={`text-foreground hover:text-primary cursor-pointer ${location === '/about' ? 'text-primary font-medium' : ''}`}
             data-testid="link-about"
           >
-            About
+            Allie's Story
           </span>
         </Link>
         <Link href="/pricing">
@@ -34,18 +34,18 @@ export default function Header() {
             className={`text-foreground hover:text-primary cursor-pointer ${location === '/signin' ? 'text-primary font-medium' : ''}`}
             data-testid="link-signin"
           >
-            Sign In
+            Sign In (Private Preview)
           </span>
         </Link>
       </nav>
 
       <Button 
         size="default"
-        data-testid="button-signup-free"
+        data-testid="button-signup-waitlist"
         className="hover-elevate active-elevate-2"
         onClick={() => window.location.href = '/signup'}
       >
-        Sign Up For Free
+        Sign Up For Private Preview Waitlist
       </Button>
     </header>
   );

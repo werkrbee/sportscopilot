@@ -33,10 +33,10 @@ export default function SignUpPage() {
           <Card className="p-8 border border-card-border">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-foreground mb-2">
-                Start Your Journey
+                Join Private Preview
               </h1>
               <p className="text-muted-foreground">
-                Sign up for free and build your personalized ActionPlan
+                Sign up for early access to SportsCopilot's private preview
               </p>
             </div>
 
@@ -123,13 +123,13 @@ export default function SignUpPage() {
                 className="w-full hover-elevate active-elevate-2"
                 data-testid="button-signup"
               >
-                Sign Up For Free
+                Join Private Preview Waitlist
               </Button>
             </form>
 
             <div className="mt-8 text-center">
               <p className="text-muted-foreground">
-                Already have an account?{" "}
+                Already have private preview access?{" "}
                 <Link href="/signin">
                   <span className="text-primary hover:underline cursor-pointer font-medium">
                     Sign in

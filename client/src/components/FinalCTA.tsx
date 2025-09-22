@@ -12,11 +12,11 @@ export default function FinalCTA() {
         </p>
         <Button 
           size="lg"
-          data-testid="button-start-free-actionplan"
+          data-testid="button-join-waitlist"
           className="text-lg px-8 py-4 hover-elevate active-elevate-2"
-          onClick={() => console.log('Start My Free ActionPlan Today clicked')}
+          onClick={() => window.location.href = '/signup'}
         >
-          Start My Free ActionPlan Today
+          Join Private Preview Waitlist
         </Button>
       </div>
     </section>

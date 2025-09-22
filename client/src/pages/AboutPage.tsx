@@ -106,11 +106,11 @@ export default function AboutPage() {
             </p>
             <Button 
               size="lg"
-              data-testid="button-start-journey"
+              data-testid="button-join-private-preview"
               className="text-lg px-8 py-4 hover-elevate active-elevate-2"
               onClick={() => window.location.href = '/signup'}
             >
-              Start Your Journey Today
+              Join Private Preview
             </Button>
           </div>
         </div>
