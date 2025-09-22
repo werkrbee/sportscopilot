@@ -27,7 +27,7 @@ export default function Hero() {
             className="text-lg px-8 py-4 hover-elevate active-elevate-2"
             onClick={() => window.location.href = '/about'}
           >
-            Watch Allie's Story
+            Watch Founder Allie Barone's SportCopilot Story
           </Button>
         </div>
       </div>
