@@ -13,21 +13,21 @@ export default function Hero() {
         </p>
         <div className="flex flex-col gap-4 justify-center">
           <Button 
-            size="lg"
-            data-testid="button-explore-agents-hero"
-            className="text-lg px-8 py-4 hover-elevate active-elevate-2"
-            onClick={() => window.location.href = '/signup'}
-          >
-            Explore Agents to Create a Personalized ActionPlan
-          </Button>
-          <Button 
             variant="outline"
             size="lg"
             data-testid="button-watch-allisons-story"
-            className="text-lg px-8 py-4 hover-elevate active-elevate-2 bg-blue-600 text-white border-blue-600 hover:bg-blue-700"
+            className="text-lg px-8 py-4 hover-elevate active-elevate-2 bg-red-600 text-white border-red-600 hover:bg-red-700"
             onClick={() => window.location.href = '/about'}
           >
             Watch Founder & CEO Allie Barone's SportsCopilot Story
+          </Button>
+          <Button 
+            size="lg"
+            data-testid="button-explore-agents-hero"
+            className="text-lg px-8 py-4 hover-elevate active-elevate-2 bg-black text-white border-black hover:bg-gray-800"
+            onClick={() => window.location.href = '/signup'}
+          >
+            Explore Agents to Create a Personalized ActionPlan
           </Button>
         </div>
       </div>

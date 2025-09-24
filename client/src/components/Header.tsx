@@ -45,7 +45,7 @@ export default function Header() {
         className="hover-elevate active-elevate-2"
         onClick={() => window.location.href = '/signup'}
       >
-        Sign Up For Private Preview Waitlist
+        Waitlist Signup
       </Button>
     </header>
   );

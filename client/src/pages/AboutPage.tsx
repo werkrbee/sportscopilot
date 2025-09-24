@@ -110,7 +110,7 @@ export default function AboutPage() {
               className="text-lg px-8 py-4 hover-elevate active-elevate-2"
               onClick={() => window.location.href = '/signup'}
             >
-              Join Private Preview
+              Waitlist Signup
             </Button>
           </div>
         </div>

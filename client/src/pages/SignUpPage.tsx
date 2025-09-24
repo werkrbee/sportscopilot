@@ -123,7 +123,7 @@ export default function SignUpPage() {
                 className="w-full hover-elevate active-elevate-2"
                 data-testid="button-signup"
               >
-                Join Private Preview Waitlist
+                Waitlist Signup
               </Button>
             </form>
 
