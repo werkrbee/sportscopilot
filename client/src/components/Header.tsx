@@ -58,6 +58,16 @@ export default function Header() {
             Waitlist Signup
           </Button>
 
+          {/* Mobile Waitlist Button */}
+          <Button 
+            size="sm"
+            data-testid="button-mobile-waitlist"
+            className="md:hidden hover-elevate active-elevate-2 bg-primary text-white font-bold px-3 py-2 text-sm"
+            onClick={() => window.location.href = '/signup'}
+          >
+            Join Waitlist
+          </Button>
+
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"

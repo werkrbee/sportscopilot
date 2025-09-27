@@ -16,7 +16,7 @@ export default function PricingPage() {
         "Progress tracking",
         "Community access"
       ],
-      cta: "Start Free",
+      cta: "Join Free Waitlist",
       testId: "plan-free"
     },
     {
@@ -32,7 +32,7 @@ export default function PricingPage() {
         "Priority support",
         "Calendar integration"
       ],
-      cta: "Start Pro Trial",
+      cta: "Join Pro Waitlist",
       testId: "plan-pro",
       popular: true
     },
