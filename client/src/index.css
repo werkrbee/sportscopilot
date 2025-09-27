@@ -14,67 +14,67 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  --background: 0 0% 98%;
+  --background: 0 0% 100%;
 
-  --foreground: 15 15% 10%;
+  --foreground: 0 0% 0%;
 
-  --border: 220 13% 87%;
+  --border: 0 0% 0%;
 
-  --card: 0 0% 96%;
+  --card: 0 0% 100%;
 
-  --card-foreground: 15 15% 10%;
+  --card-foreground: 0 0% 0%;
 
-  --card-border: 220 13% 91%;
+  --card-border: 0 0% 0%;
 
-  --sidebar: 0 0% 94%;
+  --sidebar: 0 0% 100%;
 
-  --sidebar-foreground: 15 15% 10%;
+  --sidebar-foreground: 0 0% 0%;
 
-  --sidebar-border: 220 13% 89%;
+  --sidebar-border: 0 0% 0%;
 
-  --sidebar-primary: 142 76% 36%;
+  --sidebar-primary: 0 100% 50%;
 
-  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 0 0% 91%;
+  --sidebar-accent: 0 0% 95%;
 
-  --sidebar-accent-foreground: 15 15% 10%;
+  --sidebar-accent-foreground: 0 0% 0%;
 
-  --sidebar-ring: 142 76% 36%;
+  --sidebar-ring: 0 100% 50%;
 
-  --popover: 0 0% 92%;
+  --popover: 0 0% 100%;
 
-  --popover-foreground: 15 15% 10%;
+  --popover-foreground: 0 0% 0%;
 
-  --popover-border: 220 13% 85%;
+  --popover-border: 0 0% 0%;
 
-  --primary: 142 76% 36%;
+  --primary: 0 100% 50%;
 
-  --primary-foreground: 0 0% 98%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 0 0% 90%;
+  --secondary: 0 0% 0%;
 
-  --secondary-foreground: 15 15% 10%;
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 220 13% 91%;
+  --muted: 0 0% 96%;
 
-  --muted-foreground: 15 15% 40%;
+  --muted-foreground: 0 0% 30%;
 
-  --accent: 220 13% 91%;
+  --accent: 0 100% 50%;
 
-  --accent-foreground: 15 15% 10%;
+  --accent-foreground: 0 0% 100%;
 
-  --destructive: 0 84% 60%;
+  --destructive: 0 100% 50%;
 
-  --destructive-foreground: 0 0% 98%;
+  --destructive-foreground: 0 0% 100%;
 
-  --input: 220 13% 83%;
-  --ring: 142 76% 36%;
-  --chart-1: 142 76% 36%;
-  --chart-2: 142 76% 36%;
-  --chart-3: 15 15% 25%;
-  --chart-4: 260 15% 45%;
-  --chart-5: 0 84% 60%;
+  --input: 0 0% 96%;
+  --ring: 0 100% 50%;
+  --chart-1: 0 100% 50%;
+  --chart-2: 0 0% 0%;
+  --chart-3: 0 0% 30%;
+  --chart-4: 0 100% 50%;
+  --chart-5: 0 0% 0%;
 
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
@@ -132,68 +132,68 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  --background: 15 15% 10%;
+  --background: 0 0% 0%;
 
-  --foreground: 0 0% 98%;
+  --foreground: 0 0% 100%;
 
-  --border: 15 15% 20%;
+  --border: 0 0% 100%;
 
-  --card: 15 15% 13%;
+  --card: 0 0% 0%;
 
-  --card-foreground: 0 0% 98%;
+  --card-foreground: 0 0% 100%;
 
-  --card-border: 15 15% 22%;
+  --card-border: 0 0% 100%;
 
-  --sidebar: 15 15% 11%;
+  --sidebar: 0 0% 0%;
 
-  --sidebar-foreground: 0 0% 98%;
+  --sidebar-foreground: 0 0% 100%;
 
-  --sidebar-border: 15 15% 18%;
+  --sidebar-border: 0 0% 100%;
 
-  --sidebar-primary: 142 76% 36%;
+  --sidebar-primary: 0 100% 50%;
 
-  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 15 15% 16%;
+  --sidebar-accent: 0 0% 5%;
 
-  --sidebar-accent-foreground: 0 0% 98%;
+  --sidebar-accent-foreground: 0 0% 100%;
 
-  --sidebar-ring: 142 76% 36%;
+  --sidebar-ring: 0 100% 50%;
 
-  --popover: 15 15% 15%;
+  --popover: 0 0% 0%;
 
-  --popover-foreground: 0 0% 98%;
+  --popover-foreground: 0 0% 100%;
 
-  --popover-border: 15 15% 25%;
+  --popover-border: 0 0% 100%;
 
-  --primary: 142 76% 36%;
+  --primary: 0 100% 50%;
 
-  --primary-foreground: 0 0% 98%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 15 15% 18%;
+  --secondary: 0 0% 100%;
 
-  --secondary-foreground: 0 0% 98%;
+  --secondary-foreground: 0 0% 0%;
 
-  --muted: 15 15% 17%;
+  --muted: 0 0% 5%;
 
   --muted-foreground: 0 0% 70%;
 
-  --accent: 15 15% 17%;
+  --accent: 0 100% 50%;
 
-  --accent-foreground: 0 0% 98%;
+  --accent-foreground: 0 0% 100%;
 
-  --destructive: 0 84% 60%;
+  --destructive: 0 100% 50%;
 
-  --destructive-foreground: 0 0% 98%;
+  --destructive-foreground: 0 0% 100%;
 
   /* Used as the border around inputs. Dark mode: Should be a border that is light enough to have high contrast when rendered on a --card background. More contrast than standard --border */
-  --input: 15 15% 25%;
-  --ring: 142 76% 36%;
-  --chart-1: 25 95% 65%;
-  --chart-2: 142 76% 65%;
-  --chart-3: 0 0% 85%;
-  --chart-4: 260 15% 75%;
-  --chart-5: 0 84% 75%;
+  --input: 0 0% 10%;
+  --ring: 0 100% 50%;
+  --chart-1: 0 100% 50%;
+  --chart-2: 0 0% 100%;
+  --chart-3: 0 0% 70%;
+  --chart-4: 0 100% 50%;
+  --chart-5: 0 0% 100%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(15 15% 10% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(15 15% 10% / 0.00);
