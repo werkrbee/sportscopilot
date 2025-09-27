@@ -5,17 +5,17 @@ export default function Header() {
   const [location] = useLocation();
 
   return (
-    <header className="flex items-center justify-between px-6 py-4 border-b bg-background">
+    <header className="flex items-center justify-between px-8 py-6 bg-background">
       <Link href="/">
-        <div className="font-bold text-xl text-foreground cursor-pointer hover-elevate">
+        <div className="font-black text-2xl text-foreground cursor-pointer">
           SportsCopilot
         </div>
       </Link>
       
-      <nav className="hidden md:flex items-center space-x-8">
+      <nav className="hidden md:flex items-center space-x-12">
         <Link href="/about">
           <span 
-            className={`text-foreground hover:text-primary cursor-pointer ${location === '/about' ? 'text-primary font-medium' : ''}`}
+            className={`text-foreground hover:text-primary cursor-pointer font-medium text-lg ${location === '/about' ? 'text-primary' : ''}`}
             data-testid="link-about"
           >
             Allie's Story
@@ -23,7 +23,7 @@ export default function Header() {
         </Link>
         <Link href="/pricing">
           <span 
-            className={`text-foreground hover:text-primary cursor-pointer ${location === '/pricing' ? 'text-primary font-medium' : ''}`}
+            className={`text-foreground hover:text-primary cursor-pointer font-medium text-lg ${location === '/pricing' ? 'text-primary' : ''}`}
             data-testid="link-pricing"
           >
             Pricing
@@ -31,7 +31,7 @@ export default function Header() {
         </Link>
         <Link href="/signin">
           <span 
-            className={`text-foreground hover:text-primary cursor-pointer ${location === '/signin' ? 'text-primary font-medium' : ''}`}
+            className={`text-foreground hover:text-primary cursor-pointer font-medium text-lg ${location === '/signin' ? 'text-primary' : ''}`}
             data-testid="link-signin"
           >
             Login
@@ -42,7 +42,7 @@ export default function Header() {
       <Button 
         size="default"
         data-testid="button-signup-waitlist"
-        className="hover-elevate active-elevate-2"
+        className="hover-elevate active-elevate-2 bg-primary text-white font-bold px-6 py-3"
         onClick={() => window.location.href = '/signup'}
       >
         Waitlist Signup

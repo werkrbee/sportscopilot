@@ -13,11 +13,12 @@ export default function AboutPage() {
       <main className="px-6 py-24">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Meet Allison Barone
+          <div className="mb-24">
+            <h1 className="text-6xl md:text-8xl font-black text-foreground mb-8 leading-none">
+              Meet<br />
+              <span className="text-primary">Allison Barone</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl md:text-2xl text-foreground font-light max-w-3xl">
               The creator behind SportsCopilot who turned her own training struggles into a solution for athletes everywhere
             </p>
           </div>
@@ -42,42 +43,41 @@ export default function AboutPage() {
           </div>
 
           {/* Story Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
-                From Personal Struggle to Solution
-              </h2>
-              <div className="space-y-4 text-muted-foreground">
+          <div className="mb-24">
+            <h2 className="text-4xl md:text-6xl font-black text-foreground mb-12 leading-none">
+              From Personal<br />
+              <span className="text-primary">Struggle</span> to Solution
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <div className="space-y-6 text-xl font-light text-foreground">
                 <p>
                   Allison Barone built SportsCopilot because she lived the problem herself. 
-                  As a dedicated athlete, she struggled with the same challenges that face millions of sports enthusiasts: 
-                  inconsistent training, lack of personalized guidance, and the difficulty of staying motivated without a coach.
+                  As a dedicated athlete, she struggled with inconsistent training, lack of personalized guidance, 
+                  and staying motivated without a coach.
                 </p>
                 <p>
-                  "I was tired of guessing what drills to do, when to do them, and whether I was actually improving," 
-                  Allison reflects. "I needed something that understood my goals, tracked my progress, and kept me accountable 
-                  — but personal coaches are expensive and not always available."
+                  "I was tired of guessing what drills to do and whether I was improving," 
+                  Allison reflects. "Personal coaches are expensive and not always available."
                 </p>
                 <p>
-                  That frustration became the foundation for SportsCopilot. Allison combined her passion for sports 
-                  with technology to create an AI-powered training companion that provides personalized guidance, 
-                  consistent motivation, and measurable progress tracking.
+                  That frustration became SportsCopilot. Allison combined her passion for sports 
+                  with technology to create an AI-powered training companion.
                 </p>
               </div>
-            </div>
-            <div className="space-y-6">
-              <img 
-                src={image1} 
-                alt="Allison training and demonstrating her passion for sports"
-                className="w-full rounded-lg"
-                data-testid="img-allison-sports-1"
-              />
-              <img 
-                src={image2} 
-                alt="Allison's athletic dedication and training routine"
-                className="w-full rounded-lg"
-                data-testid="img-allison-sports-2"
-              />
+              <div className="space-y-6">
+                <img 
+                  src={image1} 
+                  alt="Allison training and demonstrating her passion for sports"
+                  className="w-full"
+                  data-testid="img-allison-sports-1"
+                />
+                <img 
+                  src={image2} 
+                  alt="Allison's athletic dedication and training routine"
+                  className="w-full"
+                  data-testid="img-allison-sports-2"
+                />
+              </div>
             </div>
           </div>
 
@@ -98,16 +98,17 @@ export default function AboutPage() {
 
           {/* CTA Section */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Ready to Transform Your Training?
+            <h2 className="text-5xl md:text-7xl font-black text-foreground mb-12 leading-none">
+              Ready to Transform<br />
+              <span className="text-primary">Your Training?</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Join thousands of athletes who have already discovered the power of personalized training with SportsCopilot.
+            <p className="text-xl md:text-2xl text-foreground font-light mb-16 max-w-2xl mx-auto">
+              Join thousands of athletes who have discovered personalized training with SportsCopilot.
             </p>
             <Button 
               size="lg"
               data-testid="button-join-private-preview"
-              className="text-lg px-8 py-4 hover-elevate active-elevate-2"
+              className="text-xl px-12 py-6 hover-elevate active-elevate-2 bg-primary text-white font-black"
               onClick={() => window.location.href = '/signup'}
             >
               Waitlist Signup
