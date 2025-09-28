@@ -1,11 +1,32 @@
 import { Button } from "@/components/ui/button";
+import Scoreboard from "@/components/Scoreboard";
 
 export default function Hero() {
+  // Mock game data - can be made configurable via props or API
+  const gameData = {
+    advertiserName: "Gatorade",
+    visitingTeam: {
+      name: "Lakers",
+      score: 108
+    },
+    homeTeam: {
+      name: "Warriors",
+      score: 112
+    },
+    gameTitle: "Game of the Week"
+  };
+
   return (
     <section className="px-8 py-32 bg-background min-h-screen flex items-center">
       <div className="max-w-5xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-8">
+            <Scoreboard 
+              advertiserName={gameData.advertiserName}
+              visitingTeam={gameData.visitingTeam}
+              homeTeam={gameData.homeTeam}
+              gameTitle={gameData.gameTitle}
+            />
             <h1 className="text-6xl md:text-8xl font-black text-foreground mb-8 leading-none tracking-tight">
               Stop Guessing.<br />
               <span className="text-primary">Start Training</span><br />
