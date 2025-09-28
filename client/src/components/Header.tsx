@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
+import ThemeSelector from "@/components/ThemeSelector";
 
 export default function Header() {
   const [location] = useLocation();
@@ -48,6 +49,9 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center space-x-4">
+          {/* Theme Selector */}
+          <ThemeSelector />
+
           {/* Desktop Signup Button */}
           <Button 
             size="default"
