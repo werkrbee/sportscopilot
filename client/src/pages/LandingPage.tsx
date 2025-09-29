@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AgentBlocks from "@/components/AgentBlocks";
+import GameFramework from "@/components/GameFramework";
 import FinalCTA from "@/components/FinalCTA";
 
 export default function LandingPage() {
@@ -10,6 +11,7 @@ export default function LandingPage() {
       <main>
         <Hero />
         <AgentBlocks />
+        <GameFramework />
         <FinalCTA />
       </main>
     </div>

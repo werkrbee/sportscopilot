@@ -1,24 +1,24 @@
 import { Card } from "@/components/ui/card";
-import { Search, Target, TrendingUp } from "lucide-react";
+import { AlertCircle, MapPin, Monitor } from "lucide-react";
 
 const agents = [
   {
-    icon: Search,
-    title: "Player Evaluation Agent",
-    description: "Initial review of athlete's skills, performance, health, mindset.",
-    testId: "agent-assessment"
+    icon: AlertCircle,
+    title: "Performance Gaps",
+    description: "Areas where the athlete falls short of goals — fitness, skills, recovery, discipline.",
+    testId: "agent-performance-gaps"
   },
   {
-    icon: Target,
-    title: "SC Recommendations Agent", 
-    description: "Get the right drills, every time.",
-    testId: "agent-recommendations"
+    icon: MapPin,
+    title: "Training Plan Agent", 
+    description: "Structured roadmap of drills, workouts, nutrition, recovery.",
+    testId: "agent-training-plan"
   },
   {
-    icon: TrendingUp,
-    title: "SC Practice Plan Agent",
-    description: "Turn practice into progress.",
-    testId: "agent-practice-plan"
+    icon: Monitor,
+    title: "Performance Monitoring Agent",
+    description: "Continuous guidance, accountability, and mid-course corrections.",
+    testId: "agent-performance-monitoring"
   }
 ];
 
@@ -52,7 +52,7 @@ export default function AgentBlocks() {
         </div>
         <div className="text-center mt-12">
           <p className="text-lg text-foreground font-medium">
-            Together, this agentic system creates your personal Impact Plan.
+            SportsCopilot guides athletes through the G.A.M.E. Framework.
           </p>
         </div>
       </div>
