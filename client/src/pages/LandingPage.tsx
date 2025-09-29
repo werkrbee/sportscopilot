@@ -1,9 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AgentBlocks from "@/components/AgentBlocks";
-import AgencyPhilosophy from "@/components/AgencyPhilosophy";
-import ContentCascade from "@/components/ContentCascade";
-import DrillShowcase from "@/components/DrillShowcase";
 import FinalCTA from "@/components/FinalCTA";
 
 export default function LandingPage() {
@@ -13,9 +10,6 @@ export default function LandingPage() {
       <main>
         <Hero />
         <AgentBlocks />
-        <AgencyPhilosophy />
-        <ContentCascade />
-        <DrillShowcase />
         <FinalCTA />
       </main>
     </div>

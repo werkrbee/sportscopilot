@@ -4,21 +4,21 @@ import { Search, Target, TrendingUp } from "lucide-react";
 const agents = [
   {
     icon: Search,
-    title: "AssessmentAgent",
+    title: "SC General Assessment Agent",
     description: "Know where you stand.",
     testId: "agent-assessment"
   },
   {
     icon: Target,
-    title: "DrillAgent", 
+    title: "SC Recommendations Agent", 
     description: "Get the right drills, every time.",
-    testId: "agent-drill"
+    testId: "agent-recommendations"
   },
   {
     icon: TrendingUp,
-    title: "CoachAgent",
+    title: "SC Practice Plan Agent",
     description: "Turn practice into progress.",
-    testId: "agent-coach"
+    testId: "agent-practice-plan"
   }
 ];
 
@@ -52,7 +52,7 @@ export default function AgentBlocks() {
         </div>
         <div className="text-center mt-12">
           <p className="text-lg text-foreground font-medium">
-            Together, they create your personalized ActionPlan.
+            Together, this agentic system creates your personal Impact Plan.
           </p>
         </div>
       </div>
