@@ -1,10 +1,16 @@
 import { Card } from "@/components/ui/card";
-import { AlertCircle, MapPin, Monitor } from "lucide-react";
+import { GraduationCap, AlertCircle, MapPin, Monitor } from "lucide-react";
 
 const agents = [
   {
+    icon: GraduationCap,
+    title: "Player Evaluation Agent",
+    description: "Initial review of athlete's skills, performance, health, mindset.",
+    testId: "agent-player-evaluation"
+  },
+  {
     icon: AlertCircle,
-    title: "Performance Gaps",
+    title: "Performance Gaps Agent",
     description: "Areas where the athlete falls short of goals — fitness, skills, recovery, discipline.",
     testId: "agent-performance-gaps"
   },
@@ -26,7 +32,7 @@ export default function AgentBlocks() {
   return (
     <section className="px-6 py-24 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {agents.map((agent, index) => {
             const IconComponent = agent.icon;
             return (
