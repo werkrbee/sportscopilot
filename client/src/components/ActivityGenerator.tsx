@@ -184,7 +184,7 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
               Featured Athlete
             </span>
             <div className="bg-red-600 text-white px-2 py-1 rounded text-xs font-bold">
-              State Farm Insurance
+              State Farm
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
           <img 
             src={allisonImage}
             alt="Allison Barone"
-            className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-primary"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover object-top border-4 border-primary"
           />
           <div className="text-left">
             <div className="text-3xl md:text-4xl font-black text-primary mb-2">
