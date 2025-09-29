@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import InteractiveScoreboard from "@/components/InteractiveScoreboard";
+import ActivityGenerator from "@/components/ActivityGenerator";
 
 export default function Hero() {
   return (
@@ -7,9 +7,7 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-start">
           <div className="lg:col-span-8">
-            <InteractiveScoreboard 
-              advertiserName="Gatorade"
-            />
+            <ActivityGenerator isLoggedIn={false} />
             <h1 className="text-6xl md:text-8xl font-black text-foreground mb-8 leading-none tracking-tight">
               Stop Guessing.<br />
               <span className="text-primary">Start Training</span><br />
