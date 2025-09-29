@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { RefreshCw } from "lucide-react";
+import allisonImage from "@assets/Allison Barone Basketball_1759168369641.jpg";
 
 interface ActivityGeneratorProps {
   isLoggedIn?: boolean;
@@ -173,32 +174,36 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
     return (
       <div className="w-full bg-card border-4 border-black rounded-lg p-3 md:p-4 mb-4 md:mb-6 shadow-sm">
         {/* Header with Sponsors */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 mb-4">
-          {/* Sponsors */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
+          {/* Sponsors with Featured Athlete in center */}
           <div className="flex items-center gap-3 flex-wrap">
             <div className="bg-primary text-primary-foreground px-2 py-1 rounded text-xs font-bold">
               Gatorade
             </div>
-            <div className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold">
-              BlueCross BlueShield
-            </div>
-            <span className="text-xs text-muted-foreground font-medium hidden sm:inline">
+            <span className="text-xs text-muted-foreground font-medium">
               Featured Athlete
             </span>
+            <div className="bg-red-600 text-white px-2 py-1 rounded text-xs font-bold">
+              State Farm Insurance
+            </div>
           </div>
         </div>
 
         {/* Allison Barone */}
-        <div className="text-center mb-6">
-          <h3 className="text-2xl md:text-3xl font-black text-foreground mb-2">
-            Allison Barone
-          </h3>
-          <div className="text-3xl md:text-4xl font-black text-primary mb-4">
-            {currentAthlete}
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <img 
+            src={allisonImage}
+            alt="Allison Barone"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-primary"
+          />
+          <div className="text-left">
+            <div className="text-3xl md:text-4xl font-black text-primary mb-2">
+              Allison Barone
+            </div>
+            <p className="text-sm text-muted-foreground">
+              {totalActivities} performance contributions in the last year
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mb-4">
-            {totalActivities} performance contributions in the last year
-          </p>
         </div>
 
         {/* SportsCopilot Contributions Grid */}
