@@ -89,9 +89,7 @@ function getMonthName(month: number): string {
 }
 
 export default function ActivityGenerator({ isLoggedIn = false }: ActivityGeneratorProps) {
-  const [currentAthlete, setCurrentAthlete] = useState(() => 
-    sampleAthletes[Math.floor(Math.random() * sampleAthletes.length)]
-  );
+  const [currentAthlete, setCurrentAthlete] = useState("Allison Barone");
   const [isGenerating, setIsGenerating] = useState(false);
   
   const yearActivity = useMemo(() => generateYearActivity(), []);
@@ -175,7 +173,7 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
     return (
       <div className="w-full bg-card border-4 border-black rounded-lg p-3 md:p-4 mb-4 md:mb-6 shadow-sm">
         {/* Header with Sponsors */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 mb-4">
           {/* Sponsors */}
           <div className="flex items-center gap-3 flex-wrap">
             <div className="bg-primary text-primary-foreground px-2 py-1 rounded text-xs font-bold">
@@ -188,39 +186,18 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
               Featured Athlete
             </span>
           </div>
-          
-          {/* Generate Button */}
-          <Button
-            onClick={handleGenerateNew}
-            disabled={isGenerating}
-            size="sm"
-            className="hover-elevate active-elevate-2 bg-primary text-white font-bold"
-            data-testid="button-generate-athlete"
-          >
-            {isGenerating ? (
-              <>
-                <div className="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full mr-1"></div>
-                Loading...
-              </>
-            ) : (
-              <>
-                <RefreshCw className="w-4 h-4 mr-1" />
-                New Athlete
-              </>
-            )}
-          </Button>
         </div>
 
-        {/* Athlete Spotlight */}
+        {/* Allison Barone */}
         <div className="text-center mb-6">
           <h3 className="text-2xl md:text-3xl font-black text-foreground mb-2">
-            Athlete Spotlight
+            Allison Barone
           </h3>
           <div className="text-3xl md:text-4xl font-black text-primary mb-4">
             {currentAthlete}
           </div>
           <p className="text-sm text-muted-foreground mb-4">
-            {totalActivities} contributions in the last year
+            {totalActivities} performance contributions in the last year
           </p>
         </div>
 
@@ -284,7 +261,7 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
 
             {/* Legend */}
             <div className="flex items-center justify-between mt-4 text-xs text-muted-foreground">
-              <span>Learn how we count contributions</span>
+              <span>Learn how we count performance contributions</span>
               <div className="flex items-center gap-1">
                 <span>Less</span>
                 <div className="w-3 h-3 bg-gray-100 border border-gray-200 rounded-sm"></div>
