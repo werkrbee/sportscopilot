@@ -4,8 +4,8 @@ import { Search, Target, TrendingUp } from "lucide-react";
 const agents = [
   {
     icon: Search,
-    title: "SC General Assessment Agent",
-    description: "Know where you stand.",
+    title: "Player Evaluation Agent",
+    description: "Initial review of athlete's skills, performance, health, mindset.",
     testId: "agent-assessment"
   },
   {
