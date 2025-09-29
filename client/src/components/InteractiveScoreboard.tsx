@@ -90,7 +90,7 @@ export default function InteractiveScoreboard({
   };
 
   return (
-    <div className="w-full bg-card border border-card-border rounded-lg p-3 md:p-4 mb-4 md:mb-6 shadow-sm">
+    <div className="w-full bg-card border-4 border-black rounded-lg p-3 md:p-4 mb-4 md:mb-6 shadow-sm">
       {/* User Prompt Section */}
       <div className="mb-4">
         <div className="flex flex-col sm:flex-row gap-2">

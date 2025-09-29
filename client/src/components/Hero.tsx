@@ -3,7 +3,7 @@ import InteractiveScoreboard from "@/components/InteractiveScoreboard";
 
 export default function Hero() {
   return (
-    <section className="px-8 py-16 md:py-24 bg-background min-h-screen flex items-center">
+    <section className="px-8 pt-4 pb-16 md:pt-8 md:pb-24 bg-background min-h-screen flex items-center">
       <div className="max-w-5xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-start">
           <div className="lg:col-span-8">
