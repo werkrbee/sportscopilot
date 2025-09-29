@@ -211,31 +211,91 @@ export default function ActivityGenerator({ isLoggedIn = false }: ActivityGenera
           </Button>
         </div>
 
-        {/* Athlete Highlight */}
-        <div className="text-center">
+        {/* Athlete Spotlight */}
+        <div className="text-center mb-6">
           <h3 className="text-2xl md:text-3xl font-black text-foreground mb-2">
-            Athlete of the Week
+            Athlete Spotlight
           </h3>
           <div className="text-3xl md:text-4xl font-black text-primary mb-4">
             {currentAthlete}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-md mx-auto">
-            <div className="text-center p-3 bg-muted rounded-lg">
-              <div className="text-2xl font-black text-foreground">247</div>
-              <div className="text-xs text-muted-foreground font-medium">Assessments</div>
+          <p className="text-sm text-muted-foreground mb-4">
+            {totalActivities} contributions in the last year
+          </p>
+        </div>
+
+        {/* SportsCopilot Contributions Grid */}
+        <div className="overflow-x-auto">
+          <div className="min-w-[600px]">
+            {/* Month headers */}
+            <div className="flex mb-2">
+              <div className="w-8"></div> {/* Space for day labels */}
+              <div className="flex-1 grid grid-cols-12 gap-1 text-xs text-muted-foreground font-medium">
+                {monthsInView.map((month, idx) => (
+                  <div key={idx} className="text-center">
+                    {month.label}
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="text-center p-3 bg-muted rounded-lg">
-              <div className="text-2xl font-black text-foreground">435</div>
-              <div className="text-xs text-muted-foreground font-medium">Recommendations</div>
+
+            {/* Day labels and activity grid */}
+            <div className="flex">
+              {/* Day labels */}
+              <div className="w-8 space-y-1">
+                <div className="text-xs text-muted-foreground font-medium h-3"></div>
+                <div className="text-xs text-muted-foreground font-medium h-3">Mon</div>
+                <div className="text-xs text-muted-foreground font-medium h-3"></div>
+                <div className="text-xs text-muted-foreground font-medium h-3">Wed</div>
+                <div className="text-xs text-muted-foreground font-medium h-3"></div>
+                <div className="text-xs text-muted-foreground font-medium h-3">Fri</div>
+                <div className="text-xs text-muted-foreground font-medium h-3"></div>
+              </div>
+
+              {/* Activity squares */}
+              <div className="flex-1">
+                <div className="grid grid-rows-7 gap-1" style={{ gridTemplateColumns: `repeat(${weekData.length}, minmax(0, 1fr))` }}>
+                  {Array.from({ length: 7 }).map((_, dayOfWeek) => (
+                    weekData.map((week, weekIndex) => {
+                      const day = week[dayOfWeek];
+                      const isEmptyDay = day.date.getTime() === 0;
+                      
+                      return (
+                        <div
+                          key={`${weekIndex}-${dayOfWeek}`}
+                          className={`w-3 h-3 rounded-sm border ${
+                            isEmptyDay 
+                              ? 'bg-transparent border-transparent' 
+                              : getActivityColor(day.level)
+                          }`}
+                          title={
+                            isEmptyDay 
+                              ? '' 
+                              : `${day.date.toDateString()}: ${day.activities.assessments} assessments, ${day.activities.recommendations} recommendations, ${day.activities.practicePlans} practice plans`
+                          }
+                          data-testid={`spotlight-activity-day-${weekIndex}-${dayOfWeek}`}
+                        />
+                      );
+                    })
+                  ))}
+                </div>
+              </div>
             </div>
-            <div className="text-center p-3 bg-muted rounded-lg">
-              <div className="text-2xl font-black text-foreground">89</div>
-              <div className="text-xs text-muted-foreground font-medium">Practice Plans</div>
+
+            {/* Legend */}
+            <div className="flex items-center justify-between mt-4 text-xs text-muted-foreground">
+              <span>Learn how we count contributions</span>
+              <div className="flex items-center gap-1">
+                <span>Less</span>
+                <div className="w-3 h-3 bg-gray-100 border border-gray-200 rounded-sm"></div>
+                <div className="w-3 h-3 bg-green-100 border border-green-200 rounded-sm"></div>
+                <div className="w-3 h-3 bg-green-300 border border-green-400 rounded-sm"></div>
+                <div className="w-3 h-3 bg-green-500 border border-green-600 rounded-sm"></div>
+                <div className="w-3 h-3 bg-green-700 border border-green-800 rounded-sm"></div>
+                <span>More</span>
+              </div>
             </div>
           </div>
-          <p className="text-sm text-muted-foreground mt-4">
-            Outstanding dedication to training with SportsCopilot
-          </p>
         </div>
       </div>
     );
