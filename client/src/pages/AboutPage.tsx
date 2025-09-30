@@ -1,11 +1,8 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import BasketballCard from "@/components/BasketballCard";
-import allisonBasketballImg from "@assets/Allison Barone Basketball_1759168369641.jpg";
-import trainingVideo from "@assets/video-485_singular_display_1759209003103.mov";
-import trainingImage1 from "@assets/IMG_1407_1759208860496.jpeg";
-import trainingImage2 from "@assets/IMG_3747_1759209003103.jpeg";
+import allisonImage from "@assets/IMG_1412_1759210315004.jpeg";
+import allisonVideo from "@assets/IMG_1605_1759210340274.mov";
 
 export default function AboutPage() {
   return (
@@ -24,15 +21,13 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Basketball Card Profile */}
+          {/* Profile Image */}
           <div className="mb-16 flex justify-center">
-            <BasketballCard 
-              name="Allie Barone"
-              image={allisonBasketballImg}
-              team="Mercy Varsity"
-              sport="Basketball"
-              year="2023-2024"
-              number="4"
+            <img 
+              src={allisonImage}
+              alt="Allison Barone"
+              className="w-full max-w-md rounded-lg"
+              data-testid="img-allison-profile"
             />
           </div>
 
@@ -48,8 +43,7 @@ export default function AboutPage() {
                   className="w-full max-w-2xl rounded-lg"
                   data-testid="video-allison-story"
                 >
-                  <source src={trainingVideo} type="video/quicktime" />
-                  <source src={trainingVideo} type="video/mp4" />
+                  <source src={allisonVideo} type="video/quicktime" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -62,32 +56,16 @@ export default function AboutPage() {
               She built the tool she needed —<br />
               <span className="text-primary">and shared it so every athlete feels supported.</span>
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              <div className="space-y-6 text-xl font-light text-foreground">
-                <p className="font-medium text-2xl text-primary">
-                  SportsCopilot
-                </p>
-                <p>
-                  Allison gives because she's been fortunate to have a strong support system — but she's seen firsthand that not everyone in our communities has that same safety net. When she was playing sports, she wished she had a tool to guide, support, and keep her moving forward.
-                </p>
-                <p>
-                  That's why she built SportsCopilot: what began as her personal solution is now designed to be accessible to every athlete, so no one has to train or grow alone.
-                </p>
-              </div>
-              <div className="space-y-6">
-                <img 
-                  src={trainingImage1} 
-                  alt="Allison training and demonstrating her passion for sports"
-                  className="w-full rounded-lg"
-                  data-testid="img-allison-sports-1"
-                />
-                <img 
-                  src={trainingImage2} 
-                  alt="Allison's athletic dedication and training routine"
-                  className="w-full rounded-lg"
-                  data-testid="img-allison-sports-2"
-                />
-              </div>
+            <div className="space-y-6 text-xl font-light text-foreground max-w-3xl">
+              <p className="font-medium text-2xl text-primary">
+                SportsCopilot
+              </p>
+              <p>
+                Allison gives because she's been fortunate to have a strong support system — but she's seen firsthand that not everyone in our communities has that same safety net. When she was playing sports, she wished she had a tool to guide, support, and keep her moving forward.
+              </p>
+              <p>
+                That's why she built SportsCopilot: what began as her personal solution is now designed to be accessible to every athlete, so no one has to train or grow alone.
+              </p>
             </div>
           </div>
 
