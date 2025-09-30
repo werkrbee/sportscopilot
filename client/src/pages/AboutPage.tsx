@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import allisonImage from "@assets/IMG_1412_1759210315004.jpeg";
-import allisonVideo from "@assets/IMG_1605_1759210340274.mov";
+import allisonVideo from "@assets/IMG_1605_1759211250007.mov";
 
 export default function AboutPage() {
   return (
