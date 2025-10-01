@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import ThemeSelector from "@/components/ThemeSelector";
-import logoImage from "@assets/IMG_1500_1759292465227.png";
+import logoImage from "@assets/IMG_1501_1759292797313.png";
 
 export default function Header() {
   const [location] = useLocation();
@@ -16,14 +16,14 @@ export default function Header() {
     <>
       <header className="flex items-center justify-between px-8 py-6 bg-background relative z-50">
         <Link href="/">
-          <div className="flex items-center gap-3 cursor-pointer">
+          <div className="flex items-center gap-2 cursor-pointer">
             <img 
               src={logoImage} 
               alt="SportsCopilot Logo" 
-              className="h-10 w-10 object-contain"
+              className="h-12 w-12 md:h-10 md:w-10 object-contain"
               data-testid="img-header-logo"
             />
-            <span className="font-black text-2xl text-foreground">
+            <span className="font-black text-lg md:text-2xl text-foreground">
               SportsCopilot
             </span>
           </div>
