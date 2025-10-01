@@ -7,6 +7,7 @@ import highlightVideo2 from "@assets/Allie_Barone_Highlight_2_1759296729838.mp4"
 import highlightVideo3 from "@assets/Allie_Barone_Highlight_3_1759296729838.mp4";
 import practiceVideo1 from "@assets/Allie_Barone_Practice_1_1759301345475.mp4";
 import practiceVideo2 from "@assets/Allie_Barone_Practice2_1759293579778.mp4";
+import practiceVideo3 from "@assets/Allie_Barone_Practice_3A_1759303804885.mp4";
 
 export default function AboutPage() {
   return (
@@ -59,7 +60,7 @@ export default function AboutPage() {
             <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
               Allie Training
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="p-4 bg-card">
                 <video 
                   controls 
@@ -79,6 +80,17 @@ export default function AboutPage() {
                   data-testid="video-practice-2"
                 >
                   <source src={practiceVideo2} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
+              <Card className="p-4 bg-card">
+                <video 
+                  controls 
+                  preload="metadata"
+                  className="w-full rounded-lg"
+                  data-testid="video-practice-3"
+                >
+                  <source src={practiceVideo3} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </Card>
