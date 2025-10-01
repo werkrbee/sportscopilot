@@ -2,7 +2,9 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import allisonImage from "@assets/IMG_1412_1759288099472.jpeg";
-import allisonVideo from "@assets/Allie_Barone_Highlight_1759288016951.mp4";
+import highlightVideo1 from "@assets/Allie_Barone_Highlight_1759288016951.mp4";
+import highlightVideo2 from "@assets/Allie_Barone_Highlight_2_1759296729838.mp4";
+import highlightVideo3 from "@assets/Allie_Barone_Highlight_3_1759296729838.mp4";
 import practiceVideo1 from "@assets/Allie_Barone_Practice1_1759293560661.mp4";
 import practiceVideo2 from "@assets/Allie_Barone_Practice2_1759293579778.mp4";
 
@@ -33,24 +35,23 @@ export default function AboutPage() {
             />
           </div>
 
-          {/* Video Section */}
-          <div className="mb-16">
-            <Card className="p-8 bg-card">
-              <h2 className="text-2xl font-bold text-card-foreground mb-6 text-center">
-                Allie's Story: Why SportsCopilot Exists
-              </h2>
-              <div className="flex justify-center">
-                <video 
-                  controls 
-                  preload="metadata"
-                  className="w-full max-w-2xl rounded-lg"
-                  data-testid="video-allison-story"
-                >
-                  <source src={allisonVideo} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </Card>
+          {/* Story Section */}
+          <div className="mb-24">
+            <h2 className="text-4xl md:text-6xl font-black text-foreground mb-12 leading-none">
+              She built the tool she needed —<br />
+              <span className="text-primary">and shared it so every athlete feels supported.</span>
+            </h2>
+            <div className="space-y-6 text-xl font-light text-foreground max-w-3xl">
+              <p className="font-medium text-2xl text-primary">
+                SportsCopilot
+              </p>
+              <p>
+                Allison gives because she's been fortunate to have a strong support system — but she's seen firsthand that not everyone in our communities has that same safety net. When she was playing sports, she wished she had a tool to guide, support, and keep her moving forward.
+              </p>
+              <p>
+                That's why she built SportsCopilot: what began as her personal solution is now designed to be accessible to every athlete, so no one has to train or grow alone.
+              </p>
+            </div>
           </div>
 
           {/* Practice Videos Section */}
@@ -84,22 +85,45 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Story Section */}
-          <div className="mb-24">
-            <h2 className="text-4xl md:text-6xl font-black text-foreground mb-12 leading-none">
-              She built the tool she needed —<br />
-              <span className="text-primary">and shared it so every athlete feels supported.</span>
-            </h2>
-            <div className="space-y-6 text-xl font-light text-foreground max-w-3xl">
-              <p className="font-medium text-2xl text-primary">
-                SportsCopilot
-              </p>
-              <p>
-                Allison gives because she's been fortunate to have a strong support system — but she's seen firsthand that not everyone in our communities has that same safety net. When she was playing sports, she wished she had a tool to guide, support, and keep her moving forward.
-              </p>
-              <p>
-                That's why she built SportsCopilot: what began as her personal solution is now designed to be accessible to every athlete, so no one has to train or grow alone.
-              </p>
+          {/* Highlight Videos Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+              A few of Allie's Highlights
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="p-4 bg-card">
+                <video 
+                  controls 
+                  preload="metadata"
+                  className="w-full rounded-lg"
+                  data-testid="video-highlight-1"
+                >
+                  <source src={highlightVideo1} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
+              <Card className="p-4 bg-card">
+                <video 
+                  controls 
+                  preload="metadata"
+                  className="w-full rounded-lg"
+                  data-testid="video-highlight-2"
+                >
+                  <source src={highlightVideo2} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
+              <Card className="p-4 bg-card">
+                <video 
+                  controls 
+                  preload="metadata"
+                  className="w-full rounded-lg"
+                  data-testid="video-highlight-3"
+                >
+                  <source src={highlightVideo3} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
             </div>
           </div>
 
