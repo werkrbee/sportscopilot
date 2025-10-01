@@ -40,6 +40,7 @@ export default function AboutPage() {
               <div className="flex justify-center">
                 <video 
                   controls 
+                  preload="metadata"
                   className="w-full max-w-2xl rounded-lg"
                   data-testid="video-allison-story"
                 >
