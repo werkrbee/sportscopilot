@@ -5,7 +5,7 @@ import allisonImage from "@assets/IMG_1412_1759288099472.jpeg";
 import highlightVideo1 from "@assets/Allie_Barone_Highlight_1759288016951.mp4";
 import highlightVideo2 from "@assets/Allie_Barone_Highlight_2_1759296729838.mp4";
 import highlightVideo3 from "@assets/Allie_Barone_Highlight_3_1759296729838.mp4";
-import practiceVideo1 from "@assets/Allie_Barone_Practice1_1759293560661.mp4";
+import practiceVideo1 from "@assets/Allie_Barone_Practice_1_1759301345475.mp4";
 import practiceVideo2 from "@assets/Allie_Barone_Practice2_1759293579778.mp4";
 
 export default function AboutPage() {
@@ -57,7 +57,7 @@ export default function AboutPage() {
           {/* Practice Videos Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-              Allie in Action
+              Allie Training
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="p-4 bg-card">
@@ -88,7 +88,7 @@ export default function AboutPage() {
           {/* Highlight Videos Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-              A few of Allie's Highlights
+              Allie Game Ready
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="p-4 bg-card">
