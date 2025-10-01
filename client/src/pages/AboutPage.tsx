@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import allisonImage from "@assets/IMG_1412_1759210315004.jpeg";
-import allisonVideo from "@assets/IMG_1605_1759211250007.mov";
+import allisonImage from "@assets/IMG_1412_1759288099472.jpeg";
+import allisonVideo from "@assets/Allie_Barone_Highlight_1759288016951.mp4";
 
 export default function AboutPage() {
   return (
@@ -26,7 +26,7 @@ export default function AboutPage() {
             <img 
               src={allisonImage}
               alt="Allison Barone"
-              className="w-full max-w-md rounded-lg"
+              className="w-80 h-80 rounded-full object-cover object-center"
               data-testid="img-allison-profile"
             />
           </div>
@@ -43,7 +43,7 @@ export default function AboutPage() {
                   className="w-full max-w-2xl rounded-lg"
                   data-testid="video-allison-story"
                 >
-                  <source src={allisonVideo} type="video/quicktime" />
+                  <source src={allisonVideo} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
