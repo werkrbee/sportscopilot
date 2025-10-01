@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import allisonImage from "@assets/IMG_1412_1759288099472.jpeg";
 import allisonVideo from "@assets/Allie_Barone_Highlight_1759288016951.mp4";
+import practiceVideo1 from "@assets/Allie_Barone_Practice1_1759293560661.mp4";
+import practiceVideo2 from "@assets/Allie_Barone_Practice2_1759293579778.mp4";
 
 export default function AboutPage() {
   return (
@@ -49,6 +51,37 @@ export default function AboutPage() {
                 </video>
               </div>
             </Card>
+          </div>
+
+          {/* Practice Videos Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+              Allie in Action
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="p-4 bg-card">
+                <video 
+                  controls 
+                  preload="metadata"
+                  className="w-full rounded-lg"
+                  data-testid="video-practice-1"
+                >
+                  <source src={practiceVideo1} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
+              <Card className="p-4 bg-card">
+                <video 
+                  controls 
+                  preload="metadata"
+                  className="w-full rounded-lg"
+                  data-testid="video-practice-2"
+                >
+                  <source src={practiceVideo2} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Card>
+            </div>
           </div>
 
           {/* Story Section */}
