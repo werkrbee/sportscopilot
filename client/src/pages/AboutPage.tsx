@@ -26,7 +26,7 @@ export default function AboutPage() {
             <img 
               src={allisonImage}
               alt="Allison Barone"
-              className="w-80 h-80 rounded-full object-cover object-center"
+              className="w-80 h-80 rounded-full object-cover object-top"
               data-testid="img-allison-profile"
             />
           </div>
