@@ -20,7 +20,7 @@ export default function Header() {
             <img 
               src={logoImage} 
               alt="SportsCopilot Logo" 
-              className="h-12 w-12 md:h-10 md:w-10 object-contain"
+              className="h-16 w-16 md:h-14 md:w-14 object-contain"
               data-testid="img-header-logo"
             />
             <span className="font-black text-lg md:text-2xl text-foreground">
