@@ -1,0 +1,48 @@
+# SportsCopilot Landing Page
+
+## Overview
+A mobile-first React landing page for SportsCopilot.com featuring minimalist design inspired by Jack Dorsey's method and 37signals copy philosophy. The application showcases personalized sports training through AI-powered agents that create ActionPlans for athletes.
+
+## Recent Changes (September 21, 2025)
+- Updated color scheme to emphasize black, white, and red throughout the design
+- Added navigation header with About, Pricing, Sign In, and Sign Up For Free
+- Created About page featuring Allison Barone's story with attached video and images
+- Created Pricing page with Free, Pro, and Team tiers
+- Created authentication pages (Sign In, Sign Up)
+- Added video link on home page that leads to About page
+- Integrated user-provided media assets (video and images of Allison's sports passion)
+
+## User Preferences
+- **Design Philosophy**: Minimalist design following Jack Dorsey's "Make every single detail perfect. And limit the number of details" approach
+- **Copy Style**: 37signals-inspired (direct, clear, no fluff)
+- **Color Scheme**: Black, white, and red throughout
+- **Mobile-First**: Responsive design prioritizing mobile experience
+- **Sports Focus**: Basketball-themed with drill cards and training emphasis
+
+## Project Architecture
+- **Frontend**: React + TailwindCSS + Wouter routing
+- **Backend**: Express.js with stub integration endpoints
+- **Storage**: In-memory storage (MemStorage) 
+- **Components**: Modular React components with shadcn/ui system
+- **Assets**: Generated basketball icons and user-provided media (Allison's video/images)
+
+## Integration Notes
+- **Calendar Integration**: User dismissed Outlook connector integration (connector:ccfg_outlook_01K4BBCKRJKP82N3PYQPZQ6DAK)
+- Future calendar integration will need manual credential setup if required
+- Webhook stubs created for content cascading to mobile apps
+
+## Key Components
+- **Landing Page**: Hero, Agent Blocks, Philosophy, Content Cascade, Drill Showcase, Final CTA
+- **About Page**: Allison Barone's story with video and sports images
+- **Pricing Page**: Three-tier pricing (Free, Pro, Team)
+- **Authentication**: Sign In and Sign Up pages with form handling
+- **Drill Cards**: Basketball-themed cards with clean white/black/red design
+- **Header**: Navigation with responsive design and active states
+
+## Future Enhancements
+- Real authentication system integration
+- Calendar integration for drill reminders and ActionPlan scheduling
+- Messaging app webhooks for drill notifications and progress updates
+- User dashboard for personalized ActionPlan management
+- Drill library with filtering and search capabilities
+- Progress tracking and consistency metrics display

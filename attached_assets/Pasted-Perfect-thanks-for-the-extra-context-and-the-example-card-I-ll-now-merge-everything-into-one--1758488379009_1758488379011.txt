@@ -1,0 +1,89 @@
+Perfect — thanks for the extra context and the example card. I’ll now **merge everything** into one unified **Replit prompt** that:
+
+* Uses **React** for the front end.
+* Adopts a **minimalist design philosophy** (simplicity = genius, Dorsey method).
+* Uses **tone inspired by 37signals** (direct, clear, no fluff).
+* Incorporates your **SportsCopilot copy, agent system, ActionPlan philosophy**.
+* Generates **drill cards** like the one in your example.
+* Supports **content cascading** (hooks to mobile apps).
+
+---
+
+## 📝 Replit Prompt
+
+**Prompt:**
+Build a **mobile-first landing page for SportsCopilot.com** using **React + TailwindCSS** as the front-end framework.
+
+### Design Philosophy
+
+* Inspired by **Albert Einstein**’s belief that simplicity is the highest form of intellect.
+* Guided by **Jack Dorsey’s method**: *“Make every single detail perfect. And limit the number of details.”*
+* Tone and communication should match **37signals** (Jason Fried & DHH): direct, honest, no fluff.
+
+### Page Requirements
+
+**1. Hero Section (above the fold)**
+
+* Headline: *“Stop Guessing. Start Training with Purpose.”*
+* Subheadline: *“SportsCopilot is your personalized sports assistant — evaluating your game, recommending the right drills, and building ActionPlans to keep you consistent and motivated.”*
+* CTA Button: *“Build My ActionPlan”*
+
+**2. Value Proposition Section (Agents)**
+
+* Show three clean blocks with icons + text:
+
+  * **AssessmentAgent** – *“Know where you stand.”*
+  * **DrillAgent** – *“Get the right drills, every time.”*
+  * **CoachAgent** – *“Turn practice into progress.”*
+* Wrap-up tagline: *“Together, they create your personalized ActionPlan.”*
+
+**3. Agency Philosophy Section**
+
+* Copy: *“At SportsCopilot, we believe in agency — the responsibility we each have to improve and achieve more. We don’t take our cues from others; we own our journey. But greatness isn’t built alone. SportsCopilot is your expert companion — keeping you consistent, motivated, and on track for the long haul.”*
+* Highlight quote (large font, centered): *“Agency means you own the journey. SportsCopilot helps you stay on it.”*
+
+**4. Content Cascade Section**
+
+* Copy: *“SportsCopilot keeps you engaged by cascading content to your favorite apps — so your drills, ActionPlans, and motivation are always within reach. Sync reminders to your calendar, get notifications in your messaging apps, or track consistency through your fitness apps.”*
+* Include a mobile mockup showing a sample notification:
+  *“🏀 Daily Drill Reminder: 10 minutes of ball-handling — stay sharp!”*
+
+**5. Drill Card Example Section**
+
+* Create a **minimalist drill card component** inspired by the attached example:
+
+  * White background
+  * Thin black border
+  * Bold black title text (e.g., SHOOTING)
+  * Red subtitle (e.g., BASKETBALL DRILL)
+  * Simple line art icon (basketball + hoop)
+  * Instruction text (e.g., “10 makes from 5 spots”)
+* Keep it modular so multiple cards can be displayed in a grid.
+
+**6. Final CTA Section**
+
+* Headline: *“Be your own coach — with a Copilot by your side.”*
+* Subheadline: *“Start building the consistency and confidence you need to level up your game.”*
+* CTA Button: *“Start My Free ActionPlan Today”*
+
+---
+
+### Styling & Feel
+
+* Mobile-first, minimalist, sharp edges with precision.
+* White, black, and red palette.
+* Bold typography, clean spacing, no clutter.
+* Smooth scrolling, light transitions.
+* Use drill cards as repeatable components.
+
+---
+
+⚡️ Extra: Add **stub integration points** (JSON endpoint/webhooks) for cascading content (e.g., drills → calendar → messaging apps).
+
+---
+
+👉 This prompt tells Replit to generate the **entire React landing page with your copy, philosophy, design, and drill cards built in.**
+
+---
+
+Do you want me to also **draft the component structure** (like `Hero.js`, `ValueProps.js`, `DrillCard.js`, etc.) so the generated code is modular and ready to expand?
