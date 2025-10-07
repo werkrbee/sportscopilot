@@ -3,7 +3,14 @@
 ## Overview
 A mobile-first React landing page for SportsCopilot.com featuring minimalist design inspired by Jack Dorsey's method and 37signals copy philosophy. The application showcases personalized sports training through AI-powered agents that create ActionPlans for athletes.
 
-## Recent Changes (September 21, 2025)
+## Recent Changes 
+### October 7, 2025
+- **Configuration Fix**: Updated `.replit` and `package.json` to run Express server (port 5000) instead of standalone Vite
+  - `.replit` workflow now runs `npm run dev:server`
+  - `npm run dev` now starts the full-stack Express server with integrated Vite
+  - This fixes the Azure Static Web Apps configuration that was frontend-only
+
+### September 21, 2025
 - Updated color scheme to emphasize black, white, and red throughout the design
 - Added navigation header with About, Pricing, Sign In, and Sign Up For Free
 - Created About page featuring Allison Barone's story with attached video and images
