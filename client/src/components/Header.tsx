@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import ThemeSelector from "@/components/ThemeSelector";
-import logoImage from "@assets/IMG_1501_1759292797313.png";
+import logoImage from "@assets/IMG_2052_1760233095048.jpeg";
 
 export default function Header() {
   const [location] = useLocation();
