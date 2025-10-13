@@ -7,28 +7,28 @@ const gameSteps = [
     letter: "G",
     title: "Grade",
     subtitle: "Player Evaluation",
-    description: "Assess strengths, weaknesses, and current performance."
+    description: "Grade your current performance — assess strengths, weaknesses, skills, health, and mindset."
   },
   {
     icon: Search,
     letter: "A", 
     title: "Analyze",
     subtitle: "Performance Gaps",
-    description: "Identify what's holding the athlete back."
+    description: "Analyze gaps holding you back — pinpoint what's limiting your progress in fitness, skills, or discipline."
   },
   {
     icon: MapPin,
     letter: "M",
     title: "Map",
-    subtitle: "Impact/Training Plan", 
-    description: "Create a structured plan with drills, workouts, and recovery."
+    subtitle: "Training Plan", 
+    description: "Map a training plan tailored to your body and schedule — structured drills, workouts, and recovery roadmaps."
   },
   {
     icon: Users,
     letter: "E",
     title: "Engage",
-    subtitle: "Performance Monitoring Check-Ins",
-    description: "Provide ongoing guidance, feedback, and accountability."
+    subtitle: "Performance Monitoring",
+    description: "Engage you daily with personalized feedback and adjustments — accountability and real-time corrections."
   }
 ];
 
@@ -77,11 +77,8 @@ export default function GameFramework() {
         </div>
         
         <div className="text-center">
-          <p className="text-lg text-foreground font-medium mb-4">
-            We start by grading performance, then analyze gaps that hold players back. From there, we map out a personalized training plan and keep athletes engaged with ongoing coach check-ins.
-          </p>
           <p className="text-xl text-primary font-bold">
-            → Turning insight into impact, one athlete at a time.
+            → Your guided path to consistent athlete growth.
           </p>
         </div>
       </div>

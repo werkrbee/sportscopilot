@@ -42,15 +42,6 @@ export default function Hero() {
               No dashboards to babysit. No spreadsheets to update.
               Your Copilot observes, analyzes, and responds — just like a real coach would.
             </p>
-            <div>
-              <p className="mb-3">It helps you:</p>
-              <ul className="space-y-2 text-lg">
-                <li>• Grade your current performance</li>
-                <li>• Analyze gaps holding you back</li>
-                <li>• Map a training plan tailored to your body and schedule</li>
-                <li>• Engage you daily with personalized feedback and adjustments</li>
-              </ul>
-            </div>
             <p className="font-medium">
               That's the G.A.M.E. Framework — your guided path to consistent athlete growth.
             </p>
@@ -66,16 +57,8 @@ export default function Hero() {
               SportsCopilot isn't built for pros with teams of trainers.
               It's built for real athletes — students, workers, and dreamers juggling life and late-night practices.
             </p>
-            <div>
-              <p className="mb-3">Your Copilot works behind the scenes:</p>
-              <ul className="space-y-2 text-lg">
-                <li>• <span className="font-medium">Player Evaluation Agent</span> → Reviews your skills, health, and mindset</li>
-                <li>• <span className="font-medium">Performance Gaps Agent</span> → Pinpoints what's limiting your progress</li>
-                <li>• <span className="font-medium">Training Plan Agent</span> → Builds structured drills and recovery roadmaps</li>
-                <li>• <span className="font-medium">Performance Monitoring Agent</span> → Keeps you accountable and adjusting in real time</li>
-              </ul>
-            </div>
             <p>
+              Your Copilot works behind the scenes with four specialized agents.
               No fluff. No overthinking. Just steady, intelligent progress — on autopilot.
             </p>
           </div>
