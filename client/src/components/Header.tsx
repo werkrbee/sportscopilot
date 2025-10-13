@@ -23,9 +23,6 @@ export default function Header() {
               className="h-24 w-24 md:h-20 md:w-20 object-contain"
               data-testid="img-header-logo"
             />
-            <span className="font-black text-lg md:text-2xl text-foreground">
-              SportsCopilot
-            </span>
           </div>
         </Link>
         
