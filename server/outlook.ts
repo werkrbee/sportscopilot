@@ -28,10 +28,14 @@ async function getAccessToken() {
     }
   ).then(res => res.json()).then(data => data.items?.[0]);
 
-  const accessToken = connectionSettings?.settings?.access_token || connectionSettings.settings?.oauth?.credentials?.access_token;
+  if (!connectionSettings || !connectionSettings.settings) {
+    throw new Error('OUTLOOK_NOT_CONFIGURED');
+  }
 
-  if (!connectionSettings || !accessToken) {
-    throw new Error('Outlook not connected');
+  const accessToken = connectionSettings.settings.access_token || connectionSettings.settings?.oauth?.credentials?.access_token;
+
+  if (!accessToken) {
+    throw new Error('OUTLOOK_NOT_CONNECTED');
   }
   return accessToken;
 }
@@ -47,32 +51,38 @@ export async function getUncachableOutlookClient() {
 }
 
 export async function sendWaitlistEmail(firstName: string, lastName: string, email: string) {
-  const client = await getUncachableOutlookClient();
+  try {
+    const client = await getUncachableOutlookClient();
 
-  const mail = {
-    subject: `New Waitlist Signup: ${firstName} ${lastName}`,
-    body: {
-      contentType: "html",
-      content: `
-        <h2>New SportsCopilot Waitlist Signup</h2>
-        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Signup Date:</strong> ${new Date().toLocaleString()}</p>
-      `
-    },
-    toRecipients: [
-      {
-        emailAddress: {
-          address: "allie@sportscopilot.com"
+    const mail = {
+      subject: `New Waitlist Signup: ${firstName} ${lastName}`,
+      body: {
+        contentType: "html",
+        content: `
+          <h2>New SportsCopilot Waitlist Signup</h2>
+          <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Signup Date:</strong> ${new Date().toLocaleString()}</p>
+        `
+      },
+      toRecipients: [
+        {
+          emailAddress: {
+            address: "allie@sportscopilot.com"
+          }
         }
-      }
-    ]
-  };
+      ]
+    };
 
-  await client
-    .api('/me/sendMail')
-    .post({
-      message: mail,
-      saveToSentItems: true
-    });
+    await client
+      .api('/me/sendMail')
+      .post({
+        message: mail,
+        saveToSentItems: true
+      });
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error("Failed to send waitlist email:", errorMessage);
+    throw new Error("EMAIL_SEND_FAILED");
+  }
 }

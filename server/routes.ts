@@ -20,7 +20,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message: "Successfully joined the waitlist! We'll be in touch soon." 
       });
     } catch (error) {
-      console.error("Waitlist signup error:", error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      console.error("Waitlist signup error:", errorMessage);
       
       if (error instanceof Error && error.name === 'ZodError') {
         return res.status(400).json({ 
@@ -31,7 +32,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       res.status(500).json({ 
         success: false, 
-        message: "Something went wrong. Please try again later." 
+        message: "We're having trouble processing signups right now. Please try again in a few moments." 
       });
     }
   });

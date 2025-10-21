@@ -33,10 +33,10 @@ export default function SignUpPage() {
         email: ""
       });
     },
-    onError: (error: any) => {
+    onError: () => {
       toast({
-        title: "Error",
-        description: error.message || "Something went wrong. Please try again.",
+        title: "Unable to Join Waitlist",
+        description: "We're experiencing technical difficulties. Please try again in a few moments.",
         variant: "destructive",
       });
     },
