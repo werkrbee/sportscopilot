@@ -22,7 +22,7 @@ export default function AboutPage() {
               <span className="text-primary">Allison Barone</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground font-light max-w-3xl">
-              The creator behind SportsCopilot who turned her own training struggles into a solution for athletes everywhere
+              The creator behind SportsCopilot, transforming her own pursuit of consistency and discipline into a platform that empowers athletes to assess, plan, and track their performance progress.
             </p>
           </div>
 
@@ -39,20 +39,9 @@ export default function AboutPage() {
           {/* Story Section */}
           <div className="mb-24">
             <h2 className="text-4xl md:text-6xl font-black text-foreground mb-12 leading-none">
-              She built the tool she needed —<br />
-              <span className="text-primary">and shared it so every athlete feels supported.</span>
+              She's building the assistant she wished she had —<br />
+              <span className="text-primary">always by your side, guiding you toward consistency, confidence, and happiness in your sport.</span>
             </h2>
-            <div className="space-y-6 text-xl font-light text-foreground max-w-3xl">
-              <p className="font-medium text-2xl text-primary">
-                SportsCopilot
-              </p>
-              <p>
-                Allison gives because she's been fortunate to have a strong support system — but she's seen firsthand that not everyone in our communities has that same safety net. When she was playing sports, she wished she had a tool to guide, support, and keep her moving forward.
-              </p>
-              <p>
-                That's why she built SportsCopilot: what began as her personal solution is now designed to be accessible to every athlete, so no one has to train or grow alone.
-              </p>
-            </div>
           </div>
 
           {/* Practice Videos Section */}
