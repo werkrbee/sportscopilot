@@ -12,6 +12,17 @@ export default function Hero() {
           <br />
           "It doesn't have to be this hard."
         </h1>
+        <div className="mb-12">
+          <Button
+            variant="outline"
+            size="lg"
+            data-testid="button-watch-allisons-story"
+            className="text-lg px-8 py-6 hover-elevate active-elevate-2 bg-primary text-white border-primary font-bold"
+            onClick={() => (window.location.href = "/about")}
+          >
+            Founder Story
+          </Button>
+        </div>
         <div className="text-xl md:text-2xl text-foreground mb-12 max-w-3xl mx-auto font-light space-y-8">
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
@@ -81,16 +92,7 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-lg mx-auto">
-          <Button
-            variant="outline"
-            size="lg"
-            data-testid="button-watch-allisons-story"
-            className="text-lg px-8 py-6 hover-elevate active-elevate-2 bg-primary text-white border-primary font-bold"
-            onClick={() => (window.location.href = "/about")}
-          >
-            Watch Founder Story
-          </Button>
+        <div className="flex justify-center">
           <Button
             size="lg"
             data-testid="button-explore-agents-hero"
