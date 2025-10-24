@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import ThemeSelector from "@/components/ThemeSelector";
-import logoImage from "@assets/IMG_1501_1759292797313.png";
+import logoImage from "@assets/IMG_2081_1760315784477.jpeg";
 
 export default function Header() {
   const [location] = useLocation();
@@ -20,12 +20,9 @@ export default function Header() {
             <img 
               src={logoImage} 
               alt="SportsCopilot Logo" 
-              className="h-16 w-16 md:h-14 md:w-14 object-contain"
+              className="h-24 w-24 md:h-20 md:w-20 object-contain"
               data-testid="img-header-logo"
             />
-            <span className="font-black text-lg md:text-2xl text-foreground">
-              SportsCopilot
-            </span>
           </div>
         </Link>
         

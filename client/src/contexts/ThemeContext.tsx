@@ -79,9 +79,9 @@ function applyColorTheme(theme: ColorTheme) {
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [colorTheme, setColorTheme] = useState<ColorTheme>(() => {
-    // Load from localStorage or default to red
+    // Load from localStorage or default to blue (Ocean Blue)
     const saved = localStorage.getItem('sportscopilot-color-theme');
-    return (saved as ColorTheme) || 'red';
+    return (saved as ColorTheme) || 'blue';
   });
 
   useEffect(() => {

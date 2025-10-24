@@ -12,38 +12,7 @@ export default function Hero() {
           <br />
           "It doesn't have to be this hard."
         </h1>
-        <p className="text-xl md:text-2xl text-foreground mb-12 max-w-3xl mx-auto font-light">
-          <br />
-          <br />
-          There are tons of apps promising to make athletes better. You've
-          probably tried a few — workout trackers, stat sheets, AI tools, you
-          name it. Yet, here you are.
-          <br />
-          <br />
-          Most sports platforms end up being either too complicated, too basic,
-          or too impersonal. You know? They track numbers, but they don't really
-          care about the person behind them.
-          <br />
-          <br />
-          Not SportsCopilot. SportsCopilot is simple, supportive, and made for
-          real athletes — not pros with teams of trainers, but the ones juggling
-          school, work, and late-night practices.
-          <br />
-          <br />
-          It helps you grade your performance, analyze what's missing, map your
-          next steps, and maintain your progress — all in one place. No fluff.
-          No overthinking. Just steady improvement with guidance that feels
-          personal.
-          <br />
-          <br />
-          SportsCopilot was built by a student-athlete, for every athlete.
-          <br />
-          <br />
-          So, take a look around and sign up for the waitlist for the
-          SportsCopilot Private Preview, coming soon. We'd be honored to be part
-          of your journey.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-lg mx-auto">
+        <div className="mb-12">
           <Button
             variant="outline"
             size="lg"
@@ -51,8 +20,79 @@ export default function Hero() {
             className="text-lg px-8 py-6 hover-elevate active-elevate-2 bg-primary text-white border-primary font-bold"
             onClick={() => (window.location.href = "/about")}
           >
-            Watch Founder Story
+            Founder Story
           </Button>
+        </div>
+        <div className="text-xl md:text-2xl text-foreground mb-12 max-w-3xl mx-auto font-light space-y-8">
+          <div className="space-y-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              SportsCopilot — Your Smart Training Agent
+            </h2>
+            <p>
+              There are endless apps that promise to make athletes better — workout trackers, stat sheets, AI dashboards.
+              But they all expect you to do the work. You log the data. You read the stats. You plan the next move.
+            </p>
+            <p>
+              That's the app-centric era — where athletes operate the tools.
+            </p>
+          </div>
+
+          <div className="py-4 border-t border-b border-border my-8">
+            <p className="text-center italic">
+              Welcome to the agent-centric era.
+            </p>
+            <p className="text-center font-medium mt-2">
+              Where the tools operate for you.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <p>
+              SportsCopilot isn't another app — it's your Smart Training Agent.
+              It learns how you train, tracks your progress automatically, and adapts your plan as you evolve.
+              No dashboards to babysit. No spreadsheets to update.
+              Your Copilot observes, analyzes, and responds — just like a real coach would.
+            </p>
+            <p className="font-medium">
+              That's the G.A.M.E. Framework — your guided path to consistent athlete growth.
+            </p>
+          </div>
+
+          <div className="py-4 border-t border-border my-8"></div>
+
+          <div className="space-y-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              The Athlete's Smart Agent
+            </h2>
+            <p>
+              SportsCopilot isn't built for pros with teams of trainers.
+              It's built for real athletes — students, workers, and dreamers juggling life and late-night practices.
+            </p>
+            <p>
+              Your Copilot works behind the scenes with four specialized agents.
+              No fluff. No overthinking. Just steady, intelligent progress — on autopilot.
+            </p>
+          </div>
+
+          <div className="space-y-6 pt-4">
+            <p className="font-medium">
+              Built by a student-athlete, for every athlete.
+            </p>
+            <p>
+              You bring the effort.<br />
+              SportsCopilot brings the intelligence.
+            </p>
+            <p>
+              Take a look around and sign up for the SportsCopilot Private Preview — coming soon.
+              We'd be honored to be part of your journey.
+            </p>
+            <p className="text-primary font-bold">
+              → Be your own coach — with a Copilot by your side.
+              Start building the consistency and confidence you need.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
           <Button
             size="lg"
             data-testid="button-explore-agents-hero"

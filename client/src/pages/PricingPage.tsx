@@ -2,8 +2,11 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function PricingPage() {
+  const [, setLocation] = useLocation();
+
   const plans = [
     {
       name: "Free",
@@ -16,7 +19,6 @@ export default function PricingPage() {
         "Progress tracking",
         "Community access"
       ],
-      cta: "Join Free Waitlist",
       testId: "plan-free"
     },
     {
@@ -32,7 +34,6 @@ export default function PricingPage() {
         "Priority support",
         "Calendar integration"
       ],
-      cta: "Join Pro Waitlist",
       testId: "plan-pro",
       popular: true
     },
@@ -49,7 +50,6 @@ export default function PricingPage() {
         "Custom drill library",
         "API access"
       ],
-      cta: "Contact Sales",
       testId: "plan-team"
     }
   ];
@@ -116,9 +116,9 @@ export default function PricingPage() {
                   variant={plan.popular ? "default" : "outline"}
                   className="w-full hover-elevate active-elevate-2"
                   data-testid={`button-${plan.testId}`}
-                  onClick={() => console.log(`${plan.name} plan selected`)}
+                  onClick={() => setLocation('/signup')}
                 >
-                  {plan.cta}
+                  Join Waitlist
                 </Button>
               </Card>
             ))}

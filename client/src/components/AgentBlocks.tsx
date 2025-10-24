@@ -5,25 +5,25 @@ const agents = [
   {
     icon: GraduationCap,
     title: "Player Evaluation Agent",
-    description: "Initial review of athlete's skills, performance, health, mindset.",
+    description: "Reviews your skills, health, and mindset — complete assessment of where you are today.",
     testId: "agent-player-evaluation"
   },
   {
     icon: AlertCircle,
     title: "Performance Gaps Agent",
-    description: "Areas where the athlete falls short of goals — fitness, skills, recovery, discipline.",
+    description: "Pinpoints what's limiting your progress — identifies barriers in fitness, skills, recovery, and discipline.",
     testId: "agent-performance-gaps"
   },
   {
     icon: MapPin,
     title: "Training Plan Agent", 
-    description: "Structured roadmap of drills, workouts, nutrition, recovery.",
+    description: "Builds structured drills and recovery roadmaps — personalized training tailored to your body and schedule.",
     testId: "agent-training-plan"
   },
   {
     icon: Monitor,
     title: "Performance Monitoring Agent",
-    description: "Continuous guidance, accountability, and mid-course corrections.",
+    description: "Keeps you accountable and adjusting in real time — continuous guidance and mid-course corrections.",
     testId: "agent-performance-monitoring"
   }
 ];
@@ -57,8 +57,8 @@ export default function AgentBlocks() {
           })}
         </div>
         <div className="text-center mt-12">
-          <p className="text-lg text-foreground font-medium">
-            SportsCopilot guides athletes through the G.A.M.E. Framework.
+          <p className="text-xl text-primary font-bold">
+            → Four agents. One mission. Your athletic growth.
           </p>
         </div>
       </div>
