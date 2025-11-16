@@ -1,0 +1,290 @@
+Annotations
+1 warning
+Post Checkout
+Failed to remove 'http.https://github.com/.extraheader' from the git config
+Build and Deploy Job
+succeeded 2 days ago in 1m 52s
+Search logs
+1s
+Current runner version: '2.329.0'
+Runner Image Provisioner
+Operating System
+Runner Image
+GITHUB_TOKEN Permissions
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Download action repository 'Azure/static-web-apps-deploy@v1' (SHA:4d27395796ac319302594769cfe812bd207490b1)
+Complete job name: Build and Deploy Job
+21s
+Build container for action use: '/home/runner/work/_actions/Azure/static-web-apps-deploy/v1/Dockerfile'.
+6s
+Run actions/checkout@v4
+Syncing repository: werkrbee/sportscopilot
+Getting Git version info
+Temporarily overriding HOME='/home/runner/work/_temp/e9113fdf-9f98-43b9-9e58-9bd25d53bd00' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/sportscopilot/sportscopilot
+Deleting the contents of '/home/runner/work/sportscopilot/sportscopilot'
+Initializing the repository
+Disabling automatic garbage collection
+Setting up auth
+Fetching the repository
+Determining the checkout info
+/usr/bin/git sparse-checkout disable
+/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Checking out the ref
+/usr/bin/git log -1 --format=%H
+31788c6df703f641f4488d93c2de6f17a70b7437
+3s
+Run actions/setup-node@v4
+Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+Environment details
+/opt/hostedtoolcache/node/20.19.5/x64/bin/npm config get cache
+/home/runner/.npm
+Cache hit for: node-cache-Linux-x64-npm-4af19e7a1840a7e9729eb5332b055bbe0e0b8a203c7e090bc8f366bfb1a8b72c
+Received 88509183 of 88509183 (100.0%), 181.5 MBs/sec
+Cache Size: ~84 MB (88509183 B)
+/usr/bin/tar -xf /home/runner/work/_temp/4fa73eed-b0fb-4f81-95f2-ab2b5165b4bb/cache.tzst -P -C /home/runner/work/sportscopilot/sportscopilot --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-npm-4af19e7a1840a7e9729eb5332b055bbe0e0b8a203c7e090bc8f366bfb1a8b72c
+12s
+Run npm ci
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+
+added 520 packages, and audited 521 packages in 8s
+
+74 packages are looking for funding
+  run `npm fund` for details
+
+10 vulnerabilities (3 low, 7 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> rest-express@1.0.0 build
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 13 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 1727 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                                                        2.86 kB │ gzip:   1.06 kB
+../dist/assets/Allie_Barone_Practice_3A_1759303804885-5pce2n4x.mp4      914.68 kB
+../dist/assets/IMG_2081_1760315784477-BwAmYxRk.jpeg                   1,157.61 kB
+../dist/assets/Allison Barone Basketball_1759168369641-CZQTAfyC.jpg   1,275.86 kB
+../dist/assets/Allie_Barone_Practice_1_1759301345475-CZngcXYC.mp4     1,644.68 kB
+../dist/assets/IMG_1412_1759288099472-BdI5sG2a.jpeg                   1,738.05 kB
+../dist/assets/Allie_Barone_Highlight_3_1759296729838-Bhk408ZP.mp4   13,259.22 kB
+../dist/assets/Allie_Barone_Practice2_1759293579778-DwSoonxj.mp4     15,433.33 kB
+../dist/assets/Allie_Barone_Highlight_2_1759296729838-C1C3bQ2u.mp4   22,522.86 kB
+../dist/assets/Allie_Barone_Highlight_1759288016951-D6IaLXyJ.mp4     24,856.75 kB
+../dist/assets/index-Br5NDE7w.css                                        74.46 kB │ gzip:  12.05 kB
+../dist/assets/index-Cb8_q_6w.js                                        326.64 kB │ gzip: 102.48 kB
+✓ built in 3.87s
+1m 7s
+Run Azure/static-web-apps-deploy@v1
+/usr/bin/docker run --name f12626df24883541224606aa4c430fb4789888_d08c8f --label f12626 --workdir /github/workspace --rm -e "INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN" -e "INPUT_REPO_TOKEN" -e "INPUT_ACTION" -e "INPUT_APP_LOCATION" -e "INPUT_OUTPUT_LOCATION" -e "INPUT_API_LOCATION" -e "INPUT_API_BUILD_COMMAND" -e "INPUT_APP_ARTIFACT_LOCATION" -e "INPUT_APP_BUILD_COMMAND" -e "INPUT_ROUTES_LOCATION" -e "INPUT_SKIP_APP_BUILD" -e "INPUT_CONFIG_FILE_LOCATION" -e "INPUT_SKIP_API_BUILD" -e "INPUT_PRODUCTION_BRANCH" -e "INPUT_DEPLOYMENT_ENVIRONMENT" -e "INPUT_IS_STATIC_EXPORT" -e "INPUT_DATA_API_LOCATION" -e "INPUT_GITHUB_ID_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/sportscopilot/sportscopilot":"/github/workspace" f12626:df24883541224606aa4c430fb4789888
+DeploymentId: bddaf882-8d9f-4a87-85f6-50fde94c59de
+
+Try to validate location at: '/github/workspace'.
+App Directory Location: '/' was found.
+Try to validate location at: '/github/workspace/swa-db-connections'.
+Looking for event info
+Starting to build app with Oryx
+Azure Static Web Apps utilizes Oryx to build both static applications and Azure Functions. You can find more details on Oryx here: https://github.com/microsoft/Oryx
+---Oryx build logs---
+
+
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+
+Oryx Version: 0.2.20250107.1+ef3fb2f9c490a4fbb1f76b5746cd4ba2ff0409f4, Commit: ef3fb2f9c490a4fbb1f76b5746cd4ba2ff0409f4, ReleaseTagName: 20250107.1
+
+Build Operation ID: 6bf69d49de016c57
+OS Type           : bullseye
+Image Type        : githubactions
+
+Detecting platforms...
+Detected following platforms:
+  nodejs: 18.20.8
+Version '18.20.8' of platform 'nodejs' is not installed. Generating script to install it...
+Detected the following frameworks: Typescript,Express,React
+
+
+Source directory     : /github/workspace
+Destination directory: /bin/staticsites/bddaf882-8d9f-4a87-85f6-50fde94c59de-swa-oryx/app
+
+
+Downloading and extracting 'nodejs' version '18.20.8' to '/tmp/oryx/platforms/nodejs/18.20.8'...
+Detected image debian flavor: bullseye.
+Downloaded in 1 sec(s).
+Verifying checksum...
+Extracting contents...
+performing sha512 checksum for: nodejs...
+Done in 2 sec(s).
+
+Removing existing manifest file
+Creating directory for command manifest file if it does not exist
+Creating a manifest file...
+Node Build Command Manifest file created.
+
+Using Node version:
+v18.20.8
+
+Using Npm version:
+10.8.2
+
+Running 'npm install'...
+
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/core-auth@1.10.1',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/core-client@1.10.1',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/core-rest-pipeline@1.22.2',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/core-tracing@1.3.1',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/core-util@1.13.1',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/identity@4.13.0',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@azure/logger@1.3.0',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@typespec/ts-http-runtime@0.3.2',
+npm warn EBADENGINE   required: { node: '>=20.0.0' },
+npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+npm warn EBADENGINE }
+
+up to date, audited 521 packages in 2s
+
+74 packages are looking for funding
+  run `npm fund` for details
+
+10 vulnerabilities (3 low, 7 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Running 'npm run build'...
+
+
+> rest-express@1.0.0 build
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 13 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 1727 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                                                        2.86 kB │ gzip:   1.06 kB
+../dist/assets/Allie_Barone_Practice_3A_1759303804885-5pce2n4x.mp4      914.68 kB
+../dist/assets/IMG_2081_1760315784477-BwAmYxRk.jpeg                   1,157.61 kB
+../dist/assets/Allison Barone Basketball_1759168369641-CZQTAfyC.jpg   1,275.86 kB
+../dist/assets/Allie_Barone_Practice_1_1759301345475-CZngcXYC.mp4     1,644.68 kB
+../dist/assets/IMG_1412_1759288099472-BdI5sG2a.jpeg                   1,738.05 kB
+../dist/assets/Allie_Barone_Highlight_3_1759296729838-Bhk408ZP.mp4   13,259.22 kB
+../dist/assets/Allie_Barone_Practice2_1759293579778-DwSoonxj.mp4     15,433.33 kB
+../dist/assets/Allie_Barone_Highlight_2_1759296729838-C1C3bQ2u.mp4   22,522.86 kB
+../dist/assets/Allie_Barone_Highlight_1759288016951-D6IaLXyJ.mp4     24,856.75 kB
+../dist/assets/index-Br5NDE7w.css                                        74.46 kB │ gzip:  12.05 kB
+../dist/assets/index-Cb8_q_6w.js                                        326.64 kB │ gzip: 102.48 kB
+✓ built in 3.98s
+Preparing output...
+
+Copying files to destination directory '/bin/staticsites/bddaf882-8d9f-4a87-85f6-50fde94c59de-swa-oryx/app'...
+Done in 5 sec(s).
+
+Removing existing manifest file
+Creating a manifest file...
+Manifest file created.
+Copying .ostype to manifest output directory.
+
+Done in 14 sec(s).
+
+
+---End of Oryx build logs---
+Try to validate location at: '/bin/staticsites/bddaf882-8d9f-4a87-85f6-50fde94c59de-swa-oryx/app/dist'.
+Finished building app with Oryx
+Using 'staticwebapp.config.json' file for configuration information, 'routes.json' will be ignored.
+Copying 'staticwebapp.config.json' to build output
+No Api directory specified. Azure Functions will not be created.
+Either no Api directory was specified, or the specified directory was not found. Azure Functions will not be created.
+Zipping App Artifacts
+Done Zipping App Artifacts
+Uploading build artifacts.
+Finished Upload. Polling on deployment.
+Status: InProgress. Time: 0.1549881(s)
+Status: InProgress. Time: 15.3034988(s)
+Status: Succeeded. Time: 30.4488584(s)
+Deployment Complete :)
+Visit your site at: https://black-moss-099ef780f.2.azurestaticapps.net
+Thanks for using Azure Static Web Apps!
+Exiting
+0s
+Post job cleanup.
+Cache hit occurred on the primary key node-cache-Linux-x64-npm-4af19e7a1840a7e9729eb5332b055bbe0e0b8a203c7e090bc8f366bfb1a8b72c, not saving cache.
+0s
+Post job cleanup.
+/usr/bin/git version
+git version 2.51.2
+Temporarily overriding HOME='/home/runner/work/_temp/2e51d5eb-8327-4ec1-bcb9-b8241d0e469b' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/sportscopilot/sportscopilot
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+error: could not lock config file .git/config: Permission denied
+Warning: Failed to remove 'http.https://github.com/.extraheader' from the git config
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+0s
+Cleaning up orphan processes
