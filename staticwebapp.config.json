@@ -1,7 +1,20 @@
 {
+  "platform": {
+    "apiRuntime": "node:20"
+  },
   "routes": [
     { "route": "/", "headers": { "cache-control": "no-store" } },
-    { "route": "/index.html", "headers": { "cache-control": "no-store" } }
+    { "route": "/index.html", "headers": { "cache-control": "no-store" } },
+    { "route": "/api/*", "allowedRoles": ["anonymous"] }
   ],
-  "navigationFallback": { "rewrite": "/index.html" }
+  "navigationFallback": { 
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/api/*"]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 200
+    }
+  }
 }

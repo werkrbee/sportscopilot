@@ -25,9 +25,15 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install and Build
+      - name: Install and Build Frontend
         run: |
           npm ci
+          npm run build
+      
+      - name: Install and Build API
+        run: |
+          cd api
+          npm install
           npm run build
 
       - name: Deploy to Azure Static Web Apps
@@ -39,7 +45,7 @@ jobs:
           action: upload
           app_location: "/"      # Vite app at repo root
           output_location: "dist" # Vite build output
-          api_location: ""        # (only set if you later add Functions)
+          api_location: "api"     # Azure Functions API folder
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

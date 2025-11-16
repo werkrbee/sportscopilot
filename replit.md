@@ -3,7 +3,16 @@
 ## Overview
 A mobile-first React landing page for SportsCopilot.com featuring minimalist design inspired by Jack Dorsey's method and 37signals copy philosophy. The application showcases personalized sports training through AI-powered agents that create ActionPlans for athletes.
 
-## Recent Changes 
+## Recent Changes
+### November 16, 2025
+- **Azure Static Web Apps Migration**: Converted backend from Express to Azure Functions for full Azure SWA compatibility
+  - Created `/api` folder with Azure Functions v4 programming model
+  - Converted waitlist endpoint from Express route to serverless Azure Function
+  - Updated `staticwebapp.config.json` with Node.js 20 runtime configuration
+  - Updated GitHub Actions workflow to deploy both frontend and API
+  - Maintained Azure Microsoft Graph API email integration for production
+  - Frontend remains unchanged - still calls `/api/waitlist` endpoint
+
 ### October 7, 2025
 - **Configuration Fix**: Updated `.replit` and `package.json` to run Express server (port 5000) instead of standalone Vite
   - `.replit` workflow now runs `npm run dev:server`
@@ -28,7 +37,11 @@ A mobile-first React landing page for SportsCopilot.com featuring minimalist des
 
 ## Project Architecture
 - **Frontend**: React + TailwindCSS + Wouter routing
-- **Backend**: Express.js with stub integration endpoints
+- **Backend (Development)**: Express.js server with integrated Vite (for local dev on Replit)
+- **Backend (Production)**: Azure Functions (serverless) for Azure Static Web Apps deployment
+- **Email Integration**: Dual-mode system
+  - Development: Replit Outlook connector
+  - Production: Azure Microsoft Graph API with ClientSecretCredential
 - **Storage**: In-memory storage (MemStorage) 
 - **Components**: Modular React components with shadcn/ui system
 - **Assets**: Generated basketball icons and user-provided media (Allison's video/images)
